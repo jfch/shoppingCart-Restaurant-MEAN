@@ -1,0 +1,9 @@
+web application
+-session handle
+-consistency(order at the same time)
+
+-CAP a(read)
+-scaling(one million users)
+
+
+

@@ -1,0 +1,66 @@
+requirement in API Design.doc
+User module
+1.	user need account name, password, phone number, email address to sign up
+2.	user need account name and password to login
+3.	Get user information(profile, delivery address,  order history)
+4.	Edit user information(profile, delivery address)
+5.	Confirm delivery in order history
+6.	Comment dishes in order history after confirm
+7.	Logout
+
+Menu module
+1.	Get menu list by catalog(starter, main course, noodle, rice, beverage, dessert, soup)
+2.	Get a certain dish info by dish id(picture, name, price, materia,comments)
+3.	Order Menu
+4.	Get Special dishes for today
+5.	Get comment of a dish by dish id
+	   
+Ref requirements:
+a.	Menu Display
+i.	Menu will display in catalog(starter, main course, noodle, rice, beverage, dessert, soup).
+ii.	Each dish should show picture, name, price, materia,comments
+iii.	The menu will display in the main page for use scan, but it has order button, once user click on the order button, the user will need to login first and select the location(zipcode), then the user will go to an order page. 
+iv.	Main page should have special dishes for today.
+v.	If we have comments, then in the order page, every dish needs to have a comment button or total score (stars or something) and once click on the comment button, the comment page for the dishes will show up and display all the comments made by users for this dishes.
+
+
+Shopping Cart Module
+1.	Add dish into shopping cart by dish id and user id
+2.	Get items in shopping cart
+3.	Delete order in shopping cart by dish id and user id
+4.	Edit order by dish id
+5.	Get recommended dishes by dish id
+6.	Check out preparation(enter the address and contact information)
+7.	Check out (credit card, cash)
+.	
+Ref requirements:
+i.	In order page, every dish has ¡°Add to shopping cart¡± button, once user click on add to shopping cart, the dish will be saved in the shopping cart. After user has selected all the items, he goes to the shopping cart to check his dishes.
+ii.	In shopping cart page, the user will see all the dishes he selected and the total price, also the recommended dishes. User can select the recommended dishes into the order or delete the unwanted items from the shopping cart.
+iii.	After user has confirmed that he wants to check out, he will click on check out and user will be asked to enter the address and contact information, after user finish it, user will go to the checkout page.  
+iv.	In the checkout page, the order details(orders, delivery address, contact number) will show up and user can select different ways to check out(credit card, cash).
+
+
+
+--requiremnt 01
+b.Menu Display
+          Menu will display in catalog(starter, main course, noodle, rice, beverage, dessert, soup).
+          Each dish should show picture, name, price, materia
+          The menu will display in the main page for use scan, but it has order button, once user click on the order button, the user will need to login first and select the location(zipcode), then the user will go to an order page. Display and order page is not the same one.       
+
+
+
+---
+a.	Sign up/Login/Log out
+           user need account name, password, phone number, email address to sign in
+           user need account name and password to login
+
+b.	Menu Display
+          Menu will display in catalog(starter, main course, noodle, rice, beverage, dessert, soup).
+          Each dish should show picture, name, price, materia
+          The menu will display in the main page for use scan, but it has order button, once user click on the order button, the user will need to login first and select the location(zipcode), then the user will go to an order page. Display and order page is not the same one.       
+
+c.	Shopping Cart/Order related/Payment
+         In order page, every dish has ¡°Add to shopping cart¡± button, once user click on add to shopping cart, the dish will be saved in the shopping cart. After user has selected all the items, he goes to the shopping cart to check his dishes.
+        In shopping cart page, the user will see all the dishes he selected and the total price, also the recommended dishes. User can select the recommended dishes into the order or delete the unwanted items from the shopping cart.
+       After user has confirmed that he wants to check out, he will click on check out and user will be asked to enter the address and contact information, after user finish it, user will go to the checkout page.  
+      In the checkout page, the order details(orders, delivery address, contact number) will show up and user can select different ways to check out(credit card, cash).
